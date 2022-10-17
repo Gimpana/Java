@@ -1,0 +1,12 @@
+
+public class Clases_Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String miNombre = "Ulises";
+		System.out.println(miNombre);
+	
+	}
+
+}

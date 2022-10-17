@@ -1,0 +1,11 @@
+
+public class Clase_String2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String frase = "Hoy es un estupendo día para aprender a programar en Java";
+
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class Calculos_Math {
+	
+	public static void main(String[] args) {
+		
+		/*Refundicion con Math.round()
+		* Consiste en poner el tipo de dato al que queremos transformarlo entre
+		*/parentesis
+	}
+}
