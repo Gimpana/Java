@@ -1,0 +1,15 @@
+import javax.swing.*;
+public class pesoIdeal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String genero = "";
+		
+		do {
+			genero = JOptionPane.showInputDialog("Introduce tu género (H/M)");
+		} while (genero.equalsIgnoreCase("H")==false && genero.equalsIgnoreCase("M")==false);
+		
+	}
+
+}

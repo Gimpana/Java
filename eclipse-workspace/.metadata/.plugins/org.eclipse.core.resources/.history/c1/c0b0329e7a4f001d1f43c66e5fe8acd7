@@ -1,0 +1,11 @@
+import javax.swing.*;
+public class Entrada_texto_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String nombreUsuario = JOptionPane.showInputDialog("Introduce tú nombre, por favor: ");
+
+	}
+
+}

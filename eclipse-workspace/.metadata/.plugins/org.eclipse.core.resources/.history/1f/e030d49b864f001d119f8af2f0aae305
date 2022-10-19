@@ -1,0 +1,15 @@
+import java.util.*;
+public class Adivina_Numero {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*Refunción, convertir un tipo de dato a otro
+		 * 
+		*/Muy importante los parentesis
+		int aleatorio = (int) (Math.random()*100);
+		System.out.println(aleatorio);
+		
+	}
+
+}

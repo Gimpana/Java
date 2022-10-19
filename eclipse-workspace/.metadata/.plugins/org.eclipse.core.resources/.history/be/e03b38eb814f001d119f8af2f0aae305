@@ -1,0 +1,25 @@
+import java.util.*;
+import javax.swing.*;
+
+public class areas_figuras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Elije una opción: \n1: Cuadrado \n2: Rectangulo \n3: Triangulo \n4: Circulo");
+		
+		int figura = entrada.nextInt();
+		
+		switch (figura) {
+		
+		case 1:
+			
+			String lado = JOptionPane.showInputDialog("Introduce el lado: ");
+		
+		}
+		
+	}
+
+}

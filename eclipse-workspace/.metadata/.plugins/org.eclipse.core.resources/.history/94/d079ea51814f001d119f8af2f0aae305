@@ -1,0 +1,14 @@
+import java.util.*;
+import javax.swing.*;
+
+public class areas_figuras {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner(System.in);
+		
+
+	}
+
+}
