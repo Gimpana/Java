@@ -1,0 +1,19 @@
+
+public class Ejemplo_Array_d {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double acumulado;
+		double interes = 0.10;
+		
+		double [][] saldo = new double [6][5];
+		
+		
+		for (int = 0; i<6; i++) {
+			saldo[i][0] = 10000;
+			acumulado = 10000;
+		}
+	}
+
+}
