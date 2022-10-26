@@ -1,0 +1,29 @@
+package poo;
+
+public class Uso_Coche {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/* Instanciamos una clase | Ejemplarizar una clase */
+		Coche micoche = new Coche();
+		
+		micoche.setColor("Verde");
+		
+		System.out.println(micoche.getColor());
+		
+		System.out.println(micoche.getDatosG());
+		
+		micoche.setAsientos("no");
+		
+		System.out.println(micoche.getAsientos());
+		
+		micoche.setClimatizador("si");
+		
+		System.out.println(micoche.getClimatizador());
+		
+		System.out.println(micoche.getPesoCoche());
+
+	}
+
+}

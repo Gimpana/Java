@@ -1,0 +1,15 @@
+package poo;
+
+public class Uso_Coche {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/* Instanciamos una clase | Ejemplarizar una clase */
+		Coche Renault = new Coche();
+		
+		System.out.println("Este coche tiene: " + Renault.getRuedas + " ruedas.");
+
+	}
+
+}

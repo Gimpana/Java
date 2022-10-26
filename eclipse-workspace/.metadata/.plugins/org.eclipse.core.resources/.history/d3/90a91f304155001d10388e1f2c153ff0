@@ -1,0 +1,26 @@
+package poo;
+
+public class pruebas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+	}
+
+}
+
+class Empleados {
+	
+	public Empleados (String nom) {
+		
+		nombre = nom;
+		
+		seccion = "Administración";
+		
+	}
+	
+	private String nombre;
+	private String seccion;
+}
