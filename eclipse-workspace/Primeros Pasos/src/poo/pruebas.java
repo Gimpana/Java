@@ -17,13 +17,14 @@ public class pruebas {
 }
 
 class Empleados {
-	
+	  
 	//CONSTRUCCTOR
 	public Empleados (String nom) {
 		
 		nombre = nom;
 		
 		seccion = "Administración";
+		
 		
 	}
 	
@@ -41,6 +42,8 @@ class Empleados {
 		
 	}
 	
+	
 	private final String nombre;
+	
 	private String seccion;
 }

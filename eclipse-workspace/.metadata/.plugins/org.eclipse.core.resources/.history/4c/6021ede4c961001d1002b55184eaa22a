@@ -1,0 +1,51 @@
+package poo;
+
+public class pruebas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Empleados empleado1 = new Empleados ("Ulises Vallejos", 1);
+		Empleados empleado2 = new Empleados ("Eliel Vallejos", 2);
+		
+		empleado1.setSeccion("RRHH");
+		
+		System.out.println(empleado1.getSeccion());
+		System.out.println(empleado2.getSeccion());
+	}
+
+}
+
+class Empleados {
+	  
+	//CONSTRUCCTOR
+	public Empleados (String nom, int id) {
+		
+		nombre = nom;
+		
+		seccion = "Administración";
+		
+		this.id = id;
+		
+	}
+	
+	
+	//Setter sección
+	public void setSeccion(String seccion) {
+		
+		this.seccion = seccion;
+	}
+	
+	//Getter 
+	public String getSeccion() {
+		
+		return "EL NOMBRE ES: " + nombre + " Y LA SECCIÓN ES: " + seccion;
+		
+	}
+	
+	private final String nombre;
+	
+	private String seccion;
+	
+	private int id;
+}

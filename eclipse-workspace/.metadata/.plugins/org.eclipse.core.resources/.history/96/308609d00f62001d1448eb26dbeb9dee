@@ -1,0 +1,9 @@
+package poo;
+
+//Furgoneta hereda de coche
+public class Furgoneta extends Coche {
+
+	private int capacidadExtra;
+	private int plazasExtras;
+	
+}	

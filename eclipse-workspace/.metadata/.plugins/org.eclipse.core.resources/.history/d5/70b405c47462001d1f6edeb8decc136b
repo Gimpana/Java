@@ -1,0 +1,85 @@
+package poo;
+
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class Uso_Persona {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Empleado2 {
+	
+	public Empleado2(String nom, double sue, int agno, int mes, int dia) {
+		
+		nombre = nom;
+		
+		sueldo = sue;
+		
+		//Usamos una clase para definir una fecha en la variable calendario, dato tipo Date
+		GregorianCalendar calendario = new GregorianCalendar(agno, mes-1, dia);
+		
+		//Utilizamos la herencia de GregorianCalendar, hereda de la clase Calender. 
+		//Este método devuelve un dato de tipo Date, por eso almacenamos esto en una variable de tipo Dato
+		altaContrato = calendario.getTime();
+		
+		Id = IdSiguiente;
+		
+		IdSiguiente++;
+		
+	}
+	//Sobrecarga de constructores, podemos tener tantos constyructores como queramos, siempre que no compartan el mismo número de argunmentos que necesitan para instanciarse.
+	
+	public Empleado(String nom) {
+		//Le pasamos parametros por defecto y que crea la  instancia del objeto con los datos por defecto.
+		this(nom, 30000, 2000,01,01);
+	}
+	
+	
+	//Getter Nombre
+	public String getNombre() {
+		
+		return nombre;
+	}
+	
+	//Getter Sueldo
+	public double getSueldo() {
+			
+		return sueldo;
+	}
+		
+	//Getter Fecha de alta
+	public Date getFechaAlta() {
+		
+		return altaContrato;
+	}
+	
+	//Setter subeSueldo
+	public void setSubeSueldo(double porcentaje) {
+		
+		double aumento = (sueldo * porcentaje) / 100; 
+		
+		sueldo += aumento;
+		
+	}
+	
+	public static String dameIdSiguiente () {
+		
+		return "El ID siguiente es: " + IdSiguiente;
+	}
+	
+	private String nombre;
+	
+	private double sueldo;
+	
+	private Date altaContrato;
+	
+	private int Id;
+	
+	private static int IdSiguiente = 1;
+	
+}

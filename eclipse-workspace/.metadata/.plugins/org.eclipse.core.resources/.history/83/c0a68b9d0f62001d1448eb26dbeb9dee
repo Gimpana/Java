@@ -1,0 +1,6 @@
+package poo;
+
+//Furgoneta hereda de coche
+public class Furgoneta extends Coche {
+
+}
