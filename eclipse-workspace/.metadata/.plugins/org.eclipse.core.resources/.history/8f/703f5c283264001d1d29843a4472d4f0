@@ -32,7 +32,6 @@ public class Usuario {
 		return this.DNI;
 	}
 	
-	//Método para comprobar que el DNI es valido
 	public boolean setDNI(String DNI){
 		
 		if (DNI.matches("^[0-9]{8}-?[A-Z]{1}$")) {

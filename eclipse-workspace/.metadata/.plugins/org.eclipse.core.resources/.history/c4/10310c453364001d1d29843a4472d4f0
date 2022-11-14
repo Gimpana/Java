@@ -4,7 +4,6 @@ package PAC_DESARROLLO_UF5;
 public class GastoException extends Exception{
 
 	public GastoException () {
-		//Mensaje que lanzaremos
 		super("\nNo se pueden agregar gastos porque no hay ingresos");
 	}
 }

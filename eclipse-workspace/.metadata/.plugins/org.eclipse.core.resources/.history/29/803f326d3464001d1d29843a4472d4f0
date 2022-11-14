@@ -26,32 +26,25 @@ public class Main {
 			switch (opcion) {
 				
 			case "1":
-				//Método que gestiona el introducir gastos
 				opcion1(entrada, cuenta);
 				break;
-				
+					
 			case "2":
-				//Método que gestiona el introducir ingresos
 				opcion2(entrada, cuenta);
 				break;	
 	
 			case "3":
-				//Método que muestra todos los gastos
 				opcion3(cuenta);
 				break;
 					
 			case "4":
-				//Método que muestra todos los ingresos
 				opcion4(cuenta);
 				break;
-				
 			case "5":
-				//Método que muestra el saldo de la cuenta
 				opcion5(cuenta);
 				break;
 				
 			case "0":
-				//Método que sale del bucle
 				if (opcion0(cuenta) == false) {
 					comp2 = false;
 				}
@@ -65,7 +58,7 @@ public class Main {
 			
 		}
 		
-		//Método que pide los datos de usuario1, instancia el objeto usuario1 con los getters y setters de la clase. Luego retorna un objeto de tipo Usuario usuario1 para pasarlo al objeto cuenta
+		
 		public static Usuario pedirDatos(Usuario usuario1, Scanner entrada){
 			boolean comp1 = true;
 			

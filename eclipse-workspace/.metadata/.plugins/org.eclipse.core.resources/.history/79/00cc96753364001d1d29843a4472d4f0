@@ -31,15 +31,14 @@ public class Cuenta{
 		 
 		 this.usuario = usuario;
 	 }
-	 
-	 //Método para agregar ingresos a la List<Ingreso> 
+
 	 public double addIngresos(String description, double cantidad){
 		 Ingreso ingreso = new Ingreso(cantidad,description);
 		 this.ingresos.add(ingreso);		 
 		 return this.saldo += cantidad;
 	 }
 	 
-	//Método para agregar ingresos a la List<Gasto> y controlamos que no podemos gastar cuando no tenemos dinero
+	 
 	 public double addGastos(String description, double cantidad){
 		 		 
 		 try {
@@ -60,7 +59,6 @@ public class Cuenta{
 		 
 	 }
 	 
-	 //Métodos Getter para obtener las List<>
 	 public List<Ingreso> getIngresos(){
 		 
 		 return this.ingresos;
@@ -85,7 +83,6 @@ public class Cuenta{
 				
 		}
 	
-	//Variables de la clase cuenta
 	private double saldo;
 	private Usuario usuario; 
 	private List<Gasto> gastos = new ArrayList<>();

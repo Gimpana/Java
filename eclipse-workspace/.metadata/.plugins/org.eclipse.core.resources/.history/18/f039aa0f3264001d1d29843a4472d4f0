@@ -32,7 +32,6 @@ public class Usuario {
 		return this.DNI;
 	}
 	
-	//Método para comprobar que el DNI es valido
 	public boolean setDNI(String DNI){
 		
 		if (DNI.matches("^[0-9]{8}-?[A-Z]{1}$")) {
@@ -44,7 +43,7 @@ public class Usuario {
 		}
 	}
 	
-	//Sobre escritura del método toString
+	//Sobre escritura de método
 	@Override
 	public String toString(){
 		
@@ -53,7 +52,6 @@ public class Usuario {
 				"DNI = " + DNI; 
 	}
 	
-	//Variebles que se inicializan con los métodos en la clase main
 	private String nombre;
 	private int edad;
 	private String DNI;

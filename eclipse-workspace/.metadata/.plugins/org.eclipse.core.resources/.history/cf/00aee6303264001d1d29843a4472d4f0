@@ -9,7 +9,7 @@ public class Ingreso extends Dinero {
 		this.description = description;
 	}
 	
-	//Sobre escritura del método toString
+	//Sobre escritura del método
 	@Override
 	public String toString() {
 		

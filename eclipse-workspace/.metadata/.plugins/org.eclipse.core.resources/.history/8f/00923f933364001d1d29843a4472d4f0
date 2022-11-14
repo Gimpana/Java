@@ -60,7 +60,6 @@ public class Cuenta{
 		 
 	 }
 	 
-	 //Métodos Getter para obtener las List<>
 	 public List<Ingreso> getIngresos(){
 		 
 		 return this.ingresos;
@@ -85,7 +84,6 @@ public class Cuenta{
 				
 		}
 	
-	//Variables de la clase cuenta
 	private double saldo;
 	private Usuario usuario; 
 	private List<Gasto> gastos = new ArrayList<>();
