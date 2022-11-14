@@ -8,8 +8,8 @@ public class Cuenta{
 	//Variables de la clase cuenta
 	private double saldo;
 	private Usuario usuario; 
-	private List<Gasto> gastos;
-	private List<Ingreso> ingresos;
+	private List<Gasto> gastos;/* = new ArrayList<>();*/
+	private List<Ingreso> ingresos;/* = new ArrayList<>();*/
 	
 	//Contructor de la clase cuenta
 	public Cuenta(Usuario usuario) {
@@ -87,8 +87,10 @@ public class Cuenta{
 	@Override
 	public String toString() {
 			
-		return   "Usuario: " +this.usuario.toString() + "\n" +
-				"Saldo: " + this.saldo;
+		return  this.usuario.toString() + 
+				"Saldo: " + this.saldo +
+				"Lista Gastos: " + this.getGastos()+
+				"Lista Ingresos" + this.getIngresos();
 				
 		}
 	

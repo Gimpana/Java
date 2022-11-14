@@ -8,7 +8,7 @@ public class Usuario {
 	private String DNI;
 	
 	public Usuario() {
-	
+		
 	}
 	
 	//Métodos getters y setters

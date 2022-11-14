@@ -14,7 +14,7 @@ public class Main {
 		//Instanciammos objeto usuario1 para pasarlo por parametros a los métodos que gestionan la creacción del objeto
 		Usuario usuario1 = new Usuario();
 		
-		//Instanciammos (Creamos) objeto cuenta con el return de un método que ya ha instanciado a usuario1
+		//Instanciammos objeto cuenta con el return de un método que ya ha instanciado a usuario1
 		Cuenta cuenta = new Cuenta(pedirDatos(usuario1,entrada));
 		
 		//Bucle para presentar el menú de opciones del programa y seleccionar una opción.

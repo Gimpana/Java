@@ -87,7 +87,7 @@ public class Cuenta{
 	@Override
 	public String toString() {
 			
-		return   "Usuario: " +this.usuario.toString() + "\n" +
+		return  this.usuario.toString() + 
 				"Saldo: " + this.saldo;
 				
 		}
