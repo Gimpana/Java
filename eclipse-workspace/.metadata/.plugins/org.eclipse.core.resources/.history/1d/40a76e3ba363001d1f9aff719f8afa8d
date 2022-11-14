@@ -1,0 +1,16 @@
+package PAC_DESARROLLO_UF5;
+
+public class Ingreso extends Dinero {
+	
+	//Contructor que hereda de la clase abstracta padre Dinero
+	public Ingreso(double dinero, String description) {
+		super(dinero, description);
+	}
+	
+	//Sobre escritura del método
+	@Override
+	public String toString() {
+		
+		return "Ingreso: " + description + ", " + "Cantidad: " + dinero; 
+	}
+}

@@ -1,0 +1,40 @@
+package PAC_DESARROLLO_UF5;
+
+abstract class Dinero {
+	
+	//Constructor que van a heredar las clases hijas 
+	/*public Dinero(double dinero, String description) {
+		
+		this.dinero = dinero;
+		this.description = description;
+	}*/
+	
+	//Métodos getters y setters
+	
+	public double getDinero() {
+		
+		return this.dinero;
+	}
+	
+	public void setDinero(double dinero) {
+		
+		this.dinero = dinero;
+	}
+	
+	public String getDescription() {
+		
+		return this.description;
+	}
+	
+	public void setDescription(String description) {
+		
+		this.description = description;
+	}
+	
+	//Variables que se heredarán
+	protected double dinero;
+	protected String description;
+
+}
+
+

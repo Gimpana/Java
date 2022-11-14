@@ -1,0 +1,158 @@
+package PAC_DESARROLLO_UF5;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner(System.in);
+
+		
+		Usuario usuario1 = new Usuario();
+		
+		boolean comp1 = true;
+		
+		System.out.println("Introduce el Nombre del Usuario:");
+		usuario1.setNombre(entrada.nextLine());
+			
+		System.out.println("Introduce la edad del Usuario:");
+		usuario1.setEdad(Integer.parseInt(entrada.nextLine()));
+		
+		do {	
+			System.out.println("Introduce el DNI por favor:");
+			if(usuario1.setDNI(entrada.next())) {
+				System.out.println("Usuario creado correctamente");
+				break;
+				
+			}
+			else {
+				System.out.println("Introduce el DNI del usuario valido");
+			}
+			
+			
+		}while (comp1);
+		
+		
+		/*
+		usuario1.setNombre("Ulises");
+		usuario1.setEdad(25);
+		usuario1.setDNI("32525658F");*/
+		
+		
+		Cuenta cuenta = new Cuenta(usuario1);
+		boolean comp2 = false;
+		
+		
+		while (comp2 == false) {
+			menuDeOpciones();
+			String opcion = entrada.nextLine();
+			
+			if (opcion.contains("1")) {
+				System.out.println("Introduce una descripción:");
+				String descriptionGasto = entrada.nextLine();
+				
+				System.out.println("Introduce la cantidad:");
+				double cantidadGasto = Double.parseDouble(entrada.nextLine());
+				
+				cuenta.addGastos(descriptionGasto, cantidadGasto);
+				
+				System.out.println("Saldo Restante: "+ cuenta.getSaldo() + "€");
+				continue;
+			}
+			else if (opcion.contains("2")) {
+				System.out.println("Introduce una descripción:");
+				String descriptionIngreso = entrada.nextLine();
+				
+				System.out.println("Introduce la cantidad:");
+				double cantidadIngreso = Double.parseDouble(entrada.nextLine());
+				
+				cuenta.addIngresos(descriptionIngreso, cantidadIngreso);
+				
+				System.out.println("Saldo Restante: "+ cuenta.getSaldo() + "€");
+				continue;
+			}
+			else if (opcion.contains("3")) {
+				for (Gasto Gasto:cuenta.getGastos()) {
+					 System.out.println(Gasto.toString());
+				 }
+				continue;
+			}
+			else if (opcion.contains("4")) {
+				for (Gasto Gasto:cuenta.getGastos()) {
+					 System.out.println(Gasto.toString());
+				 }
+				continue;
+			}
+			
+			
+			/*
+			switch (opcion) {
+			
+			case "1":
+				System.out.println("Introduce una descripción:");
+				String descriptionGasto = entrada.nextLine();
+				
+				System.out.println("Introduce la cantidad:");
+				double cantidadGasto = Double.parseDouble(entrada.nextLine());
+				
+				cuenta.addGastos(descriptionGasto, cantidadGasto);
+				
+				System.out.println("Saldo Restante: "+ cuenta.getSaldo() + "€");
+				continue;
+				
+			case "2":
+				System.out.println("Introduce una descripción:");
+				String descriptionIngreso = entrada.nextLine();
+				
+				System.out.println("Introduce la cantidad:");
+				double cantidadIngreso = Double.parseDouble(entrada.nextLine());
+				
+				cuenta.addIngresos(descriptionIngreso, cantidadIngreso);
+				
+				System.out.println("Saldo Restante: "+ cuenta.getSaldo() + "€");
+				continue;
+				
+
+			case "3":
+				for (Gasto Gasto:cuenta.getGastos()) {
+					 System.out.println(Gasto.toString());
+				 }
+				continue;
+				
+			case "4":
+				 for (Ingreso Ingreso:cuenta.getIngresos()) {
+					 System.out.println(Ingreso.toString());
+				 }
+				 
+			case "5":
+				System.out.println("El saldo actual de la cuenta es: " + cuenta.getSaldo());
+				continue;
+			
+			case "0":
+				System.out.println("Fin del programa.\n"
+								+  "Gracias por utilizar la aplicación de M03B en el curso 1s2223."	);
+				comp2 = true;
+				break;
+				
+				
+			}*/
+			
+		}
+		
+
+	}
+	
+	public static void menuDeOpciones() {
+		System.out.println("Reliza una nueva acción\n"
+						+ "1 Introduce un nuevo gasto\n"
+						+ "2 Introduce un nuevo ingreso\n"
+						+ "3 Mostrar gastos\n"
+						+ "4 Mostrar Ingresos\n"
+						+ "5 Mostrar saldo\n"
+						+ "0 Salir");
+			}
+	
+
+}

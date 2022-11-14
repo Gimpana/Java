@@ -1,0 +1,17 @@
+package PAC_DESARROLLO_UF5;
+
+public class Gasto extends Dinero {
+	
+	public Gasto(double gasto, String description) {
+		super(gasto, description);
+	}
+	
+	
+	@Override
+	public String toString() {
+		
+		return "Gasto = " + dinero +
+				"Description = " + description; 
+	}
+
+}

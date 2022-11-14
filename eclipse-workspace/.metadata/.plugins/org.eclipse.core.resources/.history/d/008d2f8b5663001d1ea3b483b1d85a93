@@ -1,0 +1,19 @@
+package PAC_DESARROLLO_UF5;
+
+public class Usuario {
+	
+	public Usuario() {
+		
+	}
+	
+	public String getNombre(){
+		
+		return this.nombre;
+	}
+	
+	private String nombre;
+	private int edad;
+	private String DNI;
+
+	
+}

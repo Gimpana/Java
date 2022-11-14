@@ -1,5 +1,10 @@
 package PAC_DESARROLLO_UF5;
 
-public class GastoException {
+@SuppressWarnings("serial")
+public class GastoException extends Exception{
 
+	public GastoException () {
+		super("\nNo se pueden agregar gastos porque no hay ingresos");
+	}
 }
+

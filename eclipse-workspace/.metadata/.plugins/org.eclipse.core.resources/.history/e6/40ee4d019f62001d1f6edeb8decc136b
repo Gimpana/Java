@@ -1,0 +1,21 @@
+package PAC_DESARROLLO_UF5;
+
+public class Gastos extends Dinero {
+	
+	public Gastos(double dinero, String description) {
+		
+		super(dinero, description);
+	}
+	
+	public void Gasto(double gasto, String description) {
+		
+		this.dinero -= gasto;
+		this.description = description;
+	}
+	
+	public String toString() {
+		
+		return " " 
+	}
+
+}

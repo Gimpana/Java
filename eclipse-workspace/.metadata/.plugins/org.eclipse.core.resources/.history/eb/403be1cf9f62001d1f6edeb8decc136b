@@ -1,0 +1,9 @@
+package PAC_DESARROLLO_UF5;
+
+public class Ingresos extends Dinero {
+	
+	public Ingresos(double dinero, String description) {
+		
+		super(dinero, description);
+	}
+}

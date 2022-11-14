@@ -1,0 +1,16 @@
+package PAC_DESARROLLO_UF5;
+
+public class Usuario {
+	
+	public Usuario() {
+		
+	}
+	
+	
+	
+	private String nombre;
+	private int edad;
+	private String DNI;
+
+	
+}

@@ -1,0 +1,37 @@
+package PAC_DESARROLLO_UF5;
+
+abstract class Dinero {
+	
+	public Dinero(int dinero, String description) {
+		
+		this.dinero = dinero;
+		this.description = description;
+	}
+	
+	
+	public double getDinero() {
+		
+		return dinero;
+	}
+	
+	public void setDinero(double dinero) {
+		
+		this.dinero = dinero;
+	}
+	
+	public String getDescription() {
+		
+		return this.description;
+	}
+	
+	public void setDescription(String description) {
+		
+		this.description = description;
+	}
+	
+	protected double dinero;
+	protected String description;
+
+}
+
+

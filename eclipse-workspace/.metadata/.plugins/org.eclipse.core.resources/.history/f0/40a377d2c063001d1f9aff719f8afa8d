@@ -1,0 +1,9 @@
+package PAC_DESARROLLO_UF5;
+
+public class GastoException extends Exception{
+
+	public GastoException () {
+		super("No hay suficiente saldo para la cuenta, introduce un ingreso");
+	}
+}
+

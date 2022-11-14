@@ -1,0 +1,13 @@
+package PAC_DESARROLLO_UF5;
+
+abstract class Dinero {
+	
+	
+	
+	
+	private double dinero;
+
+}
+
+
+public abstract double getDinero ();

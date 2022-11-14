@@ -1,0 +1,18 @@
+package PAC_DESARROLLO_UF5;
+
+abstract class Dinero {
+	
+	public Dinero(dinero, descripcion) {
+		
+		dinero = dinero;
+	}
+	
+	
+	public double getDinero();
+	
+	private double dinero;
+	private String description;
+
+}
+
+

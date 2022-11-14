@@ -1,0 +1,90 @@
+package PAC_DESARROLLO_UF5;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Cuenta{
+	
+	public Cuenta(Usuario usuario) {
+		
+		this.usuario = usuario;
+		this.saldo = 0.0;
+	}
+	
+	public double getSaldo(){
+		
+		return this.saldo ;
+	}
+	
+	public void setSaldo(double saldo){
+		
+		this.saldo = saldo;
+	}
+	
+	 public Usuario getUsuario(){
+		 
+		 return this.usuario;
+	 }
+	 
+	 public void setUsuario(Usuario usuario){
+		 
+		 this.usuario = usuario;
+	 }
+
+	 public double addIngresos(String description, double cantidad){
+		 Ingreso ingreso = new Ingreso(cantidad,description);
+		 this.ingresos.add(ingreso);		 
+		 return this.saldo += cantidad;
+	 }
+	 
+	 
+	 public double addGastos(String description, double cantidad){
+		 this.gastos.add(new Gasto(cantidad,description));		 
+		 try {
+			 if (this.saldo > cantidad) {
+				 return saldo -= cantidad;
+			 }
+		 }catch(GastoException){
+			 GastoException.getMessage();
+		 }
+		 return this.saldo;
+		 /*try {
+			 double comparador = saldo -= cantidad;
+			 if (comparador > 0){
+				 return saldo -= cantidad;
+			 }
+		 }catch(GastoException error){
+			 
+		 }
+		 return saldo;*/
+		 
+
+		 
+	 }
+	 
+	 public List<Ingreso> getIngresos(){
+		 
+		 return this.ingresos;
+		 
+		 
+	 }
+	 
+	 public List<Gasto> getGastos(){
+		 
+		 return this.gastos;
+	 }
+
+	 
+	//Sobre escritura del método
+	/*@Override
+	public String toString() {
+			
+		return 
+		}*/
+	
+	private double saldo;
+	private Usuario usuario; 
+	private List<Gasto> gastos = new ArrayList<>();
+	private List<Ingreso> ingresos = new ArrayList<>();
+}

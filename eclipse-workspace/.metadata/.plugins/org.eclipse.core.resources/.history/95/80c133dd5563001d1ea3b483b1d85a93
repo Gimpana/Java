@@ -1,0 +1,19 @@
+package PAC_DESARROLLO_UF5;
+
+public class Gasto extends Dinero {
+	
+	//Contructor que hereda de la clase abstracta padre Dinero
+	public Gasto(double gasto, String description) {
+		super(gasto, description);
+		
+	}
+	
+	//Sobre escritura del método
+	@Override
+	public String toString() {
+		
+		return "Gasto = " + gasto +
+				"Description = " + description; 
+	}
+
+}
