@@ -1,0 +1,66 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Invertidor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/* Escribe una rutina para un programa que invierta las palabras de una frase dada como parametro. Por ejemplo,
+		 * si la entrada es "hoy es martes cinco", tú rutina debe devolver la frase "cinco martes es hoy"
+		 * 
+		 * */
+		
+		String entrada = "hoy es martes cinco";
+		String[] entradaList = entrada.split(" ");
+		List<String> invertidaLista = new ArrayList<>();
+		List<String> salida = new ArrayList<>();
+		
+		for (int i = 0; i < entradaList.length; i++) {
+			invertidaLista.add(i, entradaList[i]);
+		}
+		
+		/*for(String e: invertidaLista) {
+			
+			System.out.println(e);
+		}*/
+		
+		/*for (int j = invertidaLista.size() / invertidaLista.size(); j < invertidaLista.size(); j++) {
+
+			salida.add(invertidaLista.get(j));
+			System.out.println(invertidaLista.get(j));
+			invertidaLista.remove(j);
+			j--;
+
+		}*/
+		
+		int i = 1;
+		boolean comp = true;
+		
+		while(comp) {
+			if(invertidaLista.size() >= 1) {
+				int index = invertidaLista.size() - 1;
+				String ent = invertidaLista.get(index);
+				salida.add(ent);
+				invertidaLista.remove(index);
+			}
+			else {
+				break;
+			}
+			
+			
+		}
+		
+		
+		
+		
+		
+		for(String e: salida){
+			System.out.println(e);
+		}
+		
+		System.out.println(salida);
+	}
+
+}
